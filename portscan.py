@@ -93,9 +93,9 @@ def main():
     if args.output:
         with open(args.output, "w") as f:
             f.write(f"Scan result for {host} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            for port, banner in open_ports:
-                f.write(f"Port {port} open | Banner: {banner}\n")
-        print(f"\n[+] Results saved to {args.output}")
+            for port in open_ports:
+                f.write("Port {} open\n".format(port))
+        print("\n[+] Results saved to {}".format(args.output))
 
 
 if __name__ == "__main__":

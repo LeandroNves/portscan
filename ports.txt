@@ -1,0 +1,5 @@
+Scan result for nmap.org - 2025-05-13 21:52:21
+Port 80 open
+Port 25 open
+Port 22 open
+Port 443 open
